@@ -13,6 +13,9 @@ namespace R5T.F0133
     [FunctionalityMarker]
     public partial interface ILibraryDescriptionOperator : IFunctionalityMarker
     {
+        /// <summary>
+        /// The default project description is just the library description.
+        /// </summary>
         public IProjectDescription Get_DefaultProjectDescription(ILibraryDescription libraryDescription)
         {
             // The default project description is just the library description.
@@ -20,6 +23,9 @@ namespace R5T.F0133
             return output;
         }
 
+        /// <summary>
+        /// The default repository description is just the library description.
+        /// </summary>
         public IRepositoryDescription Get_DefaultRepositoryDescription(ILibraryDescription libraryDescription)
         {
             // The default repository description is just the library description.
